@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink-main antialiased font-sans;
+    margin: 0;
+    min-height: 100vh;
+  }
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F3F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D1C9;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A2B5AA;
+}
+
+/* Glassmorphism and badge accents */
+.badge-allocated {
+  @apply bg-earth-50 text-earth-700 border border-earth-200;
+}
+.badge-working {
+  @apply bg-ocean-50 text-ocean-700 border border-ocean-200;
+}
+.badge-done {
+  @apply bg-forest-50 text-forest-700 border border-forest-200;
+}
